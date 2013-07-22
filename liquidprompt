@@ -489,6 +489,9 @@ esac
 # Useless now, so undefine
 unset _lp_connection
 
+if [[ -n "$DTACH_NAME" ]]; then
+    LP_HOST="$LP_HOST/$DTACH_NAME"
+fi
 
 # BASH/ZSH function that shortens
 # a very long path for display by removing
