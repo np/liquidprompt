@@ -490,7 +490,7 @@ esac
 unset _lp_connection
 
 if [[ -n "$DTACH_NAME" ]]; then
-    LP_HOST="$LP_HOST/$DTACH_NAME"
+    LP_HOST="${LP_HOST}/${LP_COLOR_DTACH}${DTACH_NAME}${NO_COL}"
 fi
 
 # BASH/ZSH function that shortens
